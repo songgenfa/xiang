@@ -18,7 +18,7 @@ $(document).ready(function(){
 			}
 				
 		},
-		err:function(data2){
+		error:function(data2){
 			console.log("走json文件")
 			$.ajax({
 				url:"./sqljson/partyone.json",
