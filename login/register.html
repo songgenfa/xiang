@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>用户注册 - 湖北老乡会</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="Keywords" content="湖北老乡,湖北老乡会,湖北同乡">
+    <meta name="Description" content="湖北老乡会">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+<style>*{box-sizing: content-box !important;}
+</style>
+	<link rel="stylesheet" type="text/css" href="./common.css">
+	<link rel="stylesheet" type="text/css" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="./login-min.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+
+</head>
+ <body>
+
+<header>
+<div class="header">
+	<div class="logo">
+		<a href="https://hubeilaoxiang.com/">
+		<img src="">
+		</a>
+	</div>
+	<div class="list">
+		<div class="item">
+			<a href="http://hubeilaoxiang.com/">乡会首页</a>
+		</div>
+		<div class="item">
+			<a href="http://hubeilaoxiang.com/" target="_blank">论坛</a>
+		</div>
+		<div class="item">
+			<a href="http://hubeilaoxiang.com/">帮助</a>
+		</div>
+		<div class="item disn">
+			|
+		</div>
+		<div class="item regist">
+			<a href="./login.html">登录</a>
+		</div>
+	</div>
+</div>
+</header>
+<section>
+<div class="container clearfix">
+	<div class="container-layout left">
+		<div class="container-content left">
+			<div class="content">
+				<div class="item advantage">
+					<div class="wrap title-wrap">
+					<i class="fa fa-cogs"></i> 欢迎来到湖北老乡会
+					</div>
+					<div class="wrap desc-wrap">
+					 <span><i class="fa fa-gift"></i> 湖北老乡自己聚会大厅</span>
+					 <span><i class="fa fa-check"></i> 湖北老乡自己的特供</span>
+					 <span><i class="fa fa-check"></i> 湖北老乡自己的购物电商平台</span>
+					 <span><i class="fa fa-check"></i> 湖北老乡自己的论坛</span>
+					 <span><i class="fa fa-check"></i> 湖北老乡自己的投资项目</span>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="container-layout right">
+		<div class="container-content register">
+			<div class="content">
+				<div class="item activity">
+					<div class="wrap">
+						<i class="fa fa-volume-up"></i> <a href="http://hubeilaoxiang.com/" target="_blank">创始会员招募中</a>()
+					</div>
+				</div>
+				<form id="loginForm" action="http://hubeilaoxiang.com/" method="post" class="clearfix">
+					<div class="item">
+						<div class="wrap desc-wrap input-wrap">
+							<input type="text" name="username" id="username"  onkeyup="value=value.replace(/[^\d\A-Za-z\u4e00-\u9fa5]/g,'')" placeholder="用户名：仅允许汉字、字母、数字" autocomplete="off" maxlength="10">
+							<p style="display: none;"><i class="fa fa-info-circle"></i> 请设置用户名，用于登录；<br>规则：4-14位字母/数字组成。</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="wrap desc-wrap input-wrap">
+							<input type="text" name="email" id="email"  onkeyup="value=value.replace(/[^\d\a-z\@\.\-]/g,'')" placeholder="请输入您的邮箱，确保能够收信激活" autocomplete="off" value="">
+							<p style="display: none;"><i class="fa fa-info-circle"></i> 请确保邮箱能够正常收信，推荐163邮箱、QQ邮箱等国内邮箱，邮箱也可用于登录；<br><i class="fa fa-info-circle"></i> 推荐使用常用邮箱以便获取到期续费通知;<br><i class="fa fa-info-circle"></i> 我们不会给您发送营销邮件。</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="wrap desc-wrap input-wrap password">
+							<input type="password" name="passwd" id="password" placeholder="请设置密码8位以上">
+							<p><i class="fa fa-info-circle"></i> 由英文字母（必含）和数字（必含）组成，字母区分大小写。</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="wrap desc-wrap input-wrap password">
+							<input type="password" name="repasswd" id="repassword"  placeholder="请重复一次密码" onkeyup="test()">
+						</div>
+					</div>
+					<div class="item">
+						<div class="wrap desc-wrap input-wrap password">
+							<input type="text" name="" id="publiccode"  placeholder="请输入邀请码，找群主或老乡索取" onkeyup="test()">
+						</div>
+					</div>
+					<div class="item code-item">
+						<div class="wrap desc-wrap input-wrap code-input-wrap">
+							<input type="text" id="code" name="code" " placeholder="输入验证码">
+							<p><i class="fa fa-info-circle"></i> 右侧四位数字验证码。</p>
+						</div>
+						<div class="wrap code-image-wrap">
+							<img id="codeimg" width="150" height="30" src="http://www.vpsor.cn/api/getCode" title="点击更换一个验证码">
+						</div>
+					</div>
+					<div class="item msg">
+						<div class="wrap error-wrap">
+							<p id="msg"></p>
+						</div>
+						<div class="wrap msg-wrap" style="width: 165px;margin-left: -50px;">
+							<a href="./login.html">已有老乡会账号？</a>
+						</div>
+					</div>
+					<div class="item agreement-item">
+						<div class="wrap checkbox-wrap">
+							<input type="checkbox" name="agree" id="agree" value="0">
+						</div>
+						<div class="wrap agreement-wrap">
+							<span>我已阅读并同意<a href="javscript:void(0)" target="_blank">《用户服务协议》</a></span>
+						</div>
+					</div>
+				</form>
+				<div class="item">
+					<div class="wrap button-wrap">
+						<button id="btn-register">注册</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+<footer>
+    	<span><a href="">关于我们</a></span><span> | </span>
+		<span><a href="">联系我们</a></span><span> | </span>
+		<span><a href="">会员招募</a></span><span> | </span>
+		<span><a href="">友情链接招募</a></span><span> | </span>
+		<span><a href="">提意见</a></span><span> | </span>
+		<span><a href="">举报</a></span>
+		<span><a href="https://tieba.baidu.com/f?kw=%E6%B9%96%E5%8C%97%E8%80%81%E4%B9%A1">湖北老乡会百度贴吧</a></span><br>
+		<span><a href="">关于我们</a></span><span> | </span>
+		<span><a href="">联系我们</a></span><span> | </span>
+		<span><a href="">会员招募</a></span><span> | </span>
+		<span><a href="">友情链接招募</a></span><span> | </span>
+		<span><a href="https://tieba.baidu.com/f?kw=%E6%B9%96%E5%8C%97%E4%BA%BA%E5%9C%A8%E6%B5%99%E6%B1%9F">湖北人在浙江</a></span><span> | </span>
+		<span><a href="https://www.19lou.com/forum-1951-thread-7761516761450855-1-1.html">湖北老乡看过来-拼车回家群</a></span>
+		<span><a href="http://www.hzhbcc.com/index.html">杭州湖北商会</a></span>
+</footer>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#btn-register").click(function(){
+		if($("#username").val().length>=4&$("#username").val().length<16&$("#password").val().length>8&$("#password").val().length<20&$("#password").val()===$("#repassword").val()&$("#code").val()!==""){
+			var jsoninfo={
+				"username":$("#username").val(),
+				"password":$("#password").val(),
+				"email":$("#email").val(),
+				"publiccode":$("#publiccode").val(),
+			}
+			console.log(jsoninfo)
+			$.ajax({
+				url:'./server/register.php',
+				type:'post',
+				data:jsoninfo,
+				dataType:'json',
+			    success:function(data){
+			    	console.log("连接成功",data)
+			    	if(data.code==='1'){
+			    		console.log($(".item .msg-wrap a").text())
+						$(".item .msg-wrap a").text("用户名已存在")
+						$(".item .msg-wrap a").css("color","red")
+			    	}else if(data.code==='2'){
+			    		console.log($(".item .msg-wrap a").text())
+						$(".item .msg-wrap a").text("邀请码错误")
+						$(".item .msg-wrap a").css("color","red")
+			    	}else{
+			    		console.log(data)
+			    		window.localStorage.setItem("user",$("#username").val())
+			    		$(".item .msg-wrap a").text("注册成功,即将跳转到首页")
+			    		// window.location.href="http://hubeilaoxiang.com/"
+			    		var timer=setTimeout(function(){
+			    			window.location.href="../index3.html"
+			    		},2000)
+			    		
+			    	}
+			    	
+			    },
+			    error:function(err){
+			    	console.log("连接失败",err)
+			    }
+			});
+		}else{
+			console.log($(".item .msg-wrap a").text())
+			$(".item .msg-wrap a").text("注册成功,即将跳转到首页")
+			$(".item .msg-wrap a").css("color","red")
+		}
+	})
+			
+	
+})
+function test(){
+	var a=$("#password").val();
+	var b=$("#repassword").val();
+	if(a!=b){
+		$("#repassword").css("border","1px solid red")
+	}else{
+		$("#repassword").css("border","1px solid gray")
+	}
+}
+ 
+</script>
+<!-- <noscript>
+  &lt;div class="noscript-panel" style="position:fixed;top:200px;z-index:99;width:100%;min-width:1200px;"&gt;
+	&lt;div class="item" style="width:500px;height:300px;margin:0 auto;background:#1DC18A;padding:20px;border-radius:5px;"&gt;
+		&lt;div class="wrap" style="width:auto;height:50px;margin:0 auto;color:#fff;"&gt;
+			&lt;p&gt;本页面需要浏览器支持（启用）JavaScript&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class="wrap" style="width:auto;height:50px;margin:0 auto;color:#fff;"&gt;
+			&lt;p&gt;强烈建议启用浏览器对JavaScript的支持！否则功能将不可用。&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class="wrap" style="width:auto;height:50px;margin:0 auto;color:#fff;"&gt;
+			&lt;p&gt;浏览器启用JavaScript的方法（以360浏览器为例）：设置-高级设置-网页内容高级设置-允许所有网站运行 JavaScript（推荐）&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+  &lt;/div&gt;
+</noscript> -->
+
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>用户登录 - 湖北老乡会</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="Keywords" content="湖北老乡,湖北老乡会,湖北同乡">
+    <meta name="Description" content="湖北老乡会">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <style>*{box-sizing: content-box !important;}</style>
+    <link rel="stylesheet" type="text/css" href="./common.css">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="./login-min.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<style type="text/css">
+
+</style>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="logo">
+            <a href="http://hubeilaoxiang.com/login/login.html">
+                用户登录
+            </a> 
+        </div>
+        <div class="list">
+            <div class="item">
+                <a href="http://hubeilaoxiang.com/">首页</a></div>
+            <div class="item">
+                <a href="" target="_blank">论坛</a></div>
+            <div class="item">
+                <a href="">帮助</a></div>
+            <div class="item disn">|</div>
+            <div class="item regist">
+                <a href="./register.html">注册</a></div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container clearfix">
+        <div class="container-layout left">
+            <div class="container-content left">
+                <div class="content">
+                    <div class="item advantage">
+                        <div class="wrap title-wrap">
+                            <i class="fa fa-cogs"></i>欢迎来到湖北老乡会</div>
+                        <div class="wrap desc-wrap">
+                            <span>
+                                <i class="fa fa-check"></i>湖北老乡自己聚会大厅</span>
+                            <span>
+                                <i class="fa fa-check"></i>湖北老乡自己的特供</span>
+                            <span>
+                                <i class="fa fa-check"></i>湖北老乡自己的购物电商平台</span>
+                            <span>
+                                <i class="fa fa-check"></i>湖北老乡自己的论坛</span>
+                            <span>
+                                <i class="fa fa-check"></i>湖北老乡自己的投资项目</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-layout right">
+            <div class="container-content login">
+                <div class="content">
+                    <div class="item activity">
+                        <div class="wrap">
+                            <i class="fa fa-volume-up"></i>
+                            <a href="" target="_blank" style="color: blue;">创始会员招募中...</a>(目前仅开放聚会和拼车的发布功能)</div>
+                    </div>
+                    <form id="loginForm">
+                        <div class="item">
+                            <div class="wrap title-wrap">账号</div>
+                            <div class="wrap desc-wrap">
+                                <input type="text" name="username" id="username"  placeholder="请输入账号（用户名）" autocomplete="off" value=""></div>
+                        </div>
+                        <div class="item">
+                            <div class="wrap title-wrap">密码</div>
+                            <div class="wrap desc-wrap password">
+                                <input type="password" name="passwd" id="password"  placeholder="请输入密码"></div>
+                        </div>
+                        <div class="item">
+                            <div class="wrap title-wrap">验证码</div>
+                            <div class="wrap code-input-wrap">
+                                <input type="text" id="code" name="code" onkeydown="codekeydown()" onkeyup="codekeyup(event)" placeholder="输入验证码"></div>
+                            <div class="wrap code-image-wrap">
+                                <img id="codeimg" width="150" height="30" src="http://www.vpsor.cn/api/getCode" onclick="document.getElementById(&#39;codeimg&#39;).src=&#39;//www.vpsor.cn/api/getCode?&#39;+Math.random()" title="点击更换一个验证码">
+                            </div>
+                        </div>
+                        <div class="item msg">
+                            <div class="wrap error-wrap">
+                                <p id="msg"></p>
+                            </div>
+                            <div class="wrap msg-wrap">
+                                <a href="">忘记密码？</a>
+                                <a href="./register.html">没有账号？</a></div>
+                        </div>
+                    </form>
+                    <div class="item">
+                        <div class="wrap button-wrap">
+                            <button id="btn-login">登录</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <span><a href="">关于我们</a></span><span> | </span>
+        <span><a href="">联系我们</a></span><span> | </span>
+        <span><a href="">会员招募</a></span><span> | </span>
+        <span><a href="">友情链接招募</a></span><span> | </span>
+        <span><a href="">提意见</a></span><span> | </span>
+        <span><a href="">举报</a></span>
+        <span><a href="https://tieba.baidu.com/f?kw=%E6%B9%96%E5%8C%97%E8%80%81%E4%B9%A1">湖北老乡会百度贴吧</a></span><br>
+        <span><a href="">关于我们</a></span><span> | </span>
+        <span><a href="">联系我们</a></span><span> | </span>
+        <span><a href="">会员招募</a></span><span> | </span>
+        <span><a href="">友情链接招募</a></span><span> | </span>
+        <span><a href="https://tieba.baidu.com/f?kw=%E6%B9%96%E5%8C%97%E4%BA%BA%E5%9C%A8%E6%B5%99%E6%B1%9F">湖北人在浙江</a></span><span> | </span>
+        <span><a href="https://www.19lou.com/forum-1951-thread-7761516761450855-1-1.html">湖北老乡看过来-拼车回家群</a></span>
+        <span><a href="http://www.hzhbcc.com/index.html">杭州湖北商会</a></span>
+</footer>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#btn-login").click(function(){
+        if($("#username").val().length>=2&$("#username").val().length<16&$("#password").val().length>5){
+            var jsoninfo={
+                "username":$("#username").val(),
+                "password":$("#password").val()
+            }
+            console.log(jsoninfo,136)
+            $.ajax({
+                url:'./server/login.php',
+                type:'post',
+                data:jsoninfo,
+                dataType:'json',
+                success:function(data){
+                    console.log("连接成功",data)
+                    if(data.code==='1'){
+                        $(".item .msg-wrap a").text("用户名或密码错误")
+                        $(".item .msg-wrap a").css("color","red")
+                    }else{
+                        console.log(data,"登录成功")
+                         window.localStorage.setItem("user",$("#username").val())
+                        ////window.localStorage.clear()
+                         window.location.href="../index3.html"
+                         //window.location.reload()
+                       // console.log(window.localStorage)
+                    }
+                    
+                },
+                error:function(err){
+                    console.log("连接失败",err)
+                }
+            });
+        }else{
+            console.log($(".item .msg-wrap a").text(),161)
+            $(".item .msg-wrap a").text("请检查输入")
+            $(".item .msg-wrap a").css("color","red")
+        }
+    })
+            
+    
+})
+function test(){
+    var a=$("#password").val();
+    var b=$("#repassword").val();
+    if(a!=b){
+        $("#repassword").css("border","1px solid red")
+    }else{
+        $("#repassword").css("border","1px solid gray")
+    }
+}
+ 
+</script>
+</html>

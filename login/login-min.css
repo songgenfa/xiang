@@ -1,0 +1,62 @@
+@media screen and (max-width: 480px){
+    .logo,.disn{
+        display: none;
+    }
+    .header .list{
+        float: left;
+    }
+    .header{
+        min-width: 300px;
+    }
+    .container{
+        width:100%;
+    }
+    .container-layout{
+        width:100%;
+        min-height: 200px;
+    }
+    .container-layout .container-content .content{
+        margin-top: 0px!important;
+    }
+    .container-layout .container-content .content .advantage{
+        margin-top: 0px!important;
+    }
+    .container-content, .login{
+        width:100%!important;
+        border: none!important;
+        margin-left: 0px!important;
+    }
+    .content{
+        width:100%!important;
+        margin-left: 0px!important;
+        /*border: 1px solid red;*/
+    }
+    .activity{
+        width:100%!important;
+        /*border: 1px solid red;*/
+    }
+    .advantage .wrap{
+        width:100%!important;
+    }
+    .advantage .wrap span{
+        padding-left: 20%;
+    }
+    .right .login .content #loginForm .item{
+        width:100%!important;
+    }
+    .right .login .content #loginForm .item .title-wrap{
+        width: 30%;
+    }
+    .right .login .content #loginForm .item .desc-wrap{
+        width: 60%;
+    }
+    .right .login .content #loginForm .item .desc-wrap input{
+        width: 100%;
+    }
+    .right .login .content .item{
+        width: 100%;
+    }
+    .right .login .content .item .button-wrap{
+        margin-left: 10%!important;
+    }
+}
