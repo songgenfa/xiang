@@ -19,7 +19,7 @@ $(document).ready(function(){
 		},
 		err:function(data2){
 			$.ajax({
-				url:"./sqljson/party.json",
+				url:"./sqljson/partyone.json",
 				type:'get',
 				dataType:"json",
 				success:function(data){
