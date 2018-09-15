@@ -1,0 +1,50 @@
+.two_party .bbs_page{
+	position: absolute;
+	margin-top: 1000px;
+	width:700px;
+	height: 80px;
+	background: white;
+}
+.two_party .bbs_page .page_up{
+	position: absolute;
+	margin-top: 30px;
+	width:;
+	height: ;
+	background: white;
+	cursor: pointer;
+	border: none;
+	margin-left: 50px;
+}
+.two_party .bbs_page .page_down{
+	position: absolute;
+	margin-top: 30px;
+	width:;
+	height: ;
+	background: white;
+	cursor: pointer;
+	border: none;
+	margin-left: 550px;
+}
+.two_party .bbs_page ul{
+	position: absolute;
+	width:400px;
+	height: 24px;
+	background: white;
+	margin-top: 29px;
+	margin-left: 116px;
+	line-height: 24px;
+	/*border: 1px solid red;*/
+}
+.two_party .bbs_page ul li{
+	position: relative;
+	/*margin-top: 30px;*/
+	width:30px;
+	height: 24px;
+	line-height: 24px!important;
+	background: #b5b3b3;
+	float: left;
+	margin-left: 10px;
+	text-align: center;
+	padding: 0 0 0 0;
+	cursor: pointer;
+}
