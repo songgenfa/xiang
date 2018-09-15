@@ -25,6 +25,7 @@ $(document).ready(function(){
 				type:'get',
 				dataType:"json",
 				success:function(data){
+					console.log("连接json成功")
 					if(data.length>9){
 						for(i=0;i<9;i++){
 							$(".con-lunbo .gider1 ul").append(`<li><a href="./three/party.html#${data[i].id}" title="${data[i].area} ${data[i].jianjie}">【${data[i].name}】${data[i].name}</a>
