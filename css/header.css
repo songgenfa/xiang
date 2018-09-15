@@ -1,0 +1,73 @@
+html,body{
+	font-family: 宋体;
+	width:100%;
+	height: auto;
+}
+header{
+	width:100%;
+	height: 30px;
+	background: #f3eeee;
+}
+.headall{
+	width:100%;
+	height: 30px;
+	line-height: 30px;
+	background: #f3eeee;
+	z-index: 99;
+	min-width: 960px;
+}
+ 
+.headleft{
+	float: left;
+}
+
+.headright{
+	float: right;
+	width:auto;
+	height: 30px;
+	margin-right: 20px;
+}
+.headright div{
+	font-size: 16px;
+}
+.headright>ul>li{
+	width:80px;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.headright>ul>li:hover ul{
+	display: block;
+	z-index: 999;
+}
+.headright>ul>li>ul{
+	position: absolute;
+	display: none;
+}
+.headright>ul>li>ul>li{
+	width:85px;
+	height: 30px;
+	font-size: 15px;
+	background: #f3eeee;
+} 
+.glyphicon{
+	position: relative;
+	top: 3px;
+	left: 3px;
+}
+.headright>ul>li:hover  .glyphicon{
+	transform:rotate(180deg)!important;
+	display: inline-block;
+	top: 0px;
+	left: 3px;
+}
+.headall .hright{
+	display: none;
+}
+.headcontent{
+	width:100%;
+	height: 30px;
+	background: green;
+	display: none;
+}

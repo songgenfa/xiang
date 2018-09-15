@@ -1,0 +1,25 @@
+.conbox{
+	width:100%;
+	max-width: 1200px;
+	border: 1px solid black;
+	min-height: 300px;
+	margin: auto;
+	position: relative;
+}
+.conbox:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.conbox ul{
+	width:50%;
+	float: left;
+	height: auto;
+	text-align: center;
+	min-height: 150px;
+}
+.conbox ul li{
+	line-height: 27px;
+}

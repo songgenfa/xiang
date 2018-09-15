@@ -1,0 +1,62 @@
+@media screen and (max-width:480px) {
+	html,body{
+		width: 100%;
+	}
+
+	header .headall .headright{
+		display: none!important;
+	}
+	.headall {
+		width:100%!important;
+		min-width: 375px;
+		padding-right: 20px;
+	}
+	.headall .hright{
+		display: block;
+		float: right;
+		cursor: pointer;
+	}
+	.headcontent{
+		height: auto;
+		text-align: center;
+		background: #8c8b85;
+		display: none;
+	}
+	.headcontent:after {
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+	}
+	.headcontent ul li{
+		width:31%;
+		height: 30px;
+		border: 1px solid #decaca;
+		float: left;
+		margin-left: 5px;
+		line-height: 30px;
+
+	}
+	.headcontent ul li a{
+		color: white;
+	}
+	.gider1,.gider2,#myCarousel{
+		width:100%!important;
+		height: auto!important;
+	}
+	body{
+		height: auto;
+	}
+	.conbox ul{
+		width:100%;
+		float: left;
+		height: auto;
+	}
+	.footer{
+		line-height: 30px;
+		margin-top: 100px;
+		height: 65px;
+	}
+
+}

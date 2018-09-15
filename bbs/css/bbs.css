@@ -1,0 +1,69 @@
+body{
+	background: #eeede8;
+}
+.bbs_input{
+	width: 961px;
+	height: 300px;
+	background: white;
+	margin:auto;
+	margin-top: 20px;
+	border-top: 1px solid gray;
+	padding-left: 20px;
+}
+.bbs_input select{
+	position: absolute;
+	margin-top: 20px;
+	margin-left:80px;
+}
+.bbs_input span{
+	position: absolute;
+	margin-top: 20px;
+	/*margin-left: -600px;*/
+}
+.bbs_input .input_title{
+	position: absolute;
+	margin-top: 53px;
+	/*margin-left: -600px;*/
+}
+.bbs_input .input_article{
+	position: absolute;
+	margin-top: 100px;
+	/*margin-left: -600px;*/
+	width: 600px;
+	height: 150px;
+}
+.bbs_input button{
+	position: absolute;
+	margin-top: 260px;
+	/*margin-left: -600px;*/
+	width: 60px;
+	height: 30px;
+}
+.three_bbs_article{
+	position: relative;
+	margin-top: 10px;
+	margin-left: 100px;
+	height: auto;
+	width:500px;
+	/*border: 1px solid red;*/
+}
+.three_bbs_body ul li{
+	height: auto!important;
+	min-height: 100px;
+}
+.three_bbs_body ul li:after {
+            content: ".";
+            clear: both;
+            display: block;
+            overflow: hidden;
+            font-size: 0;
+            height: 0;
+}
+.three_bbs_foot{
+	position: relative;
+	width:100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	text-align: right;
+}
