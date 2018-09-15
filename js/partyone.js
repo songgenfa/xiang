@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	console.log("走php文件")
 	$.ajax({
 		url:"./server-party/getlist.php",
 		type:'get',
