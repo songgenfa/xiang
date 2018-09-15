@@ -1,0 +1,86 @@
+.headall{
+	width:100%;
+	height: 30px;
+	line-height: 30px;
+	background: #f3eeee;
+	z-index: 999;
+	min-width: 960px;
+}
+ 
+.headleft{
+	float: left;
+}
+
+.headright{
+	float: right;
+	width:auto;
+	height: 30px;
+	margin-right: 20px;
+	/*background: red;*/
+}
+
+.headright>ul>li{
+	width:80px;
+	float: left;
+	height: 30px;
+	/*background: green;*/
+	text-align: center;
+}
+.headright>ul>li:hover ul{
+	display: block;
+}
+.headright>ul>li>ul{
+	position: absolute;
+	display: none;
+	/*margin-top: 30px;*/
+}
+.headright>ul>li>ul>li{
+	/*float: left;*/
+	width:85px;
+	height: 30px;
+	font-size: 15px;
+	background: #f3eeee;
+} 
+.glyphicon{
+	position: relative;
+	top: 3px;
+	left: 3px;
+}/* .glyphicon*/
+.headright>ul>li:hover  .glyphicon{
+	transform:rotate(180deg)!important;
+	display: inline-block;
+	top: 0px;
+	left: 3px;
+}
+
+.cars{
+	width:100%;
+	height: 100px;
+	background: yellow;
+
+}
+.cars a{
+	text-decoration: none;
+}
+
+
+
+ul,li{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+footer{
+	font-size: 16px;
+	line-height: 100px;
+	width:100%;
+	text-align: center;
+	margin-top: 100px;
+	height: 100px;
+	background-color: #f3eeee;
+	/*position: fixed;*/
+	position: relative;
+	bottom:20px;
+}
+

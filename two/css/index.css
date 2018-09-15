@@ -1,0 +1,24 @@
+
+.two_party{
+	padding-top: 20px;
+	width:960px;
+	height: 100%;
+	background: #eae8e8;
+	margin:auto;
+}
+.two_party ul li{
+	padding: 10px 20px 0 20px;
+	border-bottom: 1px solid #d2cdcd;
+}
+
+.two_cars{
+	padding-top: 20px;
+	width:960px;
+	height: 100%;
+	background: #eae8e8;
+	margin:auto;
+}
+.two_cars ul li{
+	padding: 10px 20px 0 20px;
+	border-bottom: 1px solid #d2cdcd;
+}
