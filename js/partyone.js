@@ -21,7 +21,7 @@ $(document).ready(function(){
 		error:function(data2){
 			console.log("走json文件")
 			$.ajax({
-				url:"./sqljson/partyone.json",
+				url:"./sqljson/party.json",
 				type:'get',
 				dataType:"json",
 				success:function(data){
@@ -38,7 +38,7 @@ $(document).ready(function(){
 					}
 						
 				},
-				err:function(data){
+				error:function(data){
 					console.log("连接失败",data)
 				},
 			});
