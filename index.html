@@ -199,7 +199,7 @@
 		</ul>
 	</div>
 	<div class="logotitle">
-		<h2>湖北老乡网欢迎您--（网站出售中）</h2><span><i class="glyphicon glyphicon-menu-down"></i>湖北老乡网站建设意见征集中(联系QQ群:456958314；目前仅开放聚会、拼车和论坛三个板块的功能)</span><p id="ip"></p>
+		<h2>湖北老乡网欢迎您</h2><span><i class="glyphicon glyphicon-menu-down"></i>湖北老乡网站建设意见征集中(联系QQ群:456958314；目前仅开放聚会、拼车和论坛三个板块的功能)</span><p id="ip"></p>
 	</div>
 	<div class="mylist" style="width: 960px;height: 36px;margin:auto;">
 		<div>
@@ -629,8 +629,11 @@ $(document).ready(function(){
         type: 'POST',
         dataType: 'jsonp',
         success:function(data) {
-        	if(data.content.address_detail.city=="临沂"||data.content.address_detail.city=="临沂市"){
-            		alert("山东省临沂市郯城县沂河路 郯城英才职业中专")
+        	if(data.content.address_detail.city=="临沂"||data.content.address_detail.city=="杭州市"){
+            		// alert("山东省临沂市郯城县沂河路 郯城英才职业中专")
+					for(i=1;i>0;i++){
+					    console.log(i)
+					}
         	}else{
         		console.log("正常")
         	}
